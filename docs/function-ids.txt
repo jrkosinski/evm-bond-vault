@@ -1,0 +1,151 @@
+
+SecurityManager:
++-------------------------------+------------+
+|              Name             |     ID     |
++-------------------------------+------------+
+|    hasRole(bytes32,address)   | 0x91d14854 |
+|    hasRole(bytes32,address)   | 0x91d14854 |
+|     getRoleAdmin(bytes32)     | 0x248a9ca3 |
+|   grantRole(bytes32,address)  | 0x2f2ff15d |
+|  revokeRole(bytes32,address)  | 0xd547741f |
+| renounceRole(bytes32,address) | 0x36568abe |
+|    hasRole(bytes32,address)   | 0x91d14854 |
+|     getRoleAdmin(bytes32)     | 0x248a9ca3 |
+|   grantRole(bytes32,address)  | 0x2f2ff15d |
+|  revokeRole(bytes32,address)  | 0xd547741f |
+| renounceRole(bytes32,address) | 0x36568abe |
+|      constructor(address)     | 0xf8a6c595 |
+|    hasRole(bytes32,address)   | 0x91d14854 |
+| renounceRole(bytes32,address) | 0x36568abe |
+|  revokeRole(bytes32,address)  | 0xd547741f |
+|          ADMIN_ROLE()         | 0x75b238fc |
++-------------------------------+------------+
+
+
+VaultToken:
++-------------------------------------------------+------------+
+|                       Name                      |     ID     |
++-------------------------------------------------+------------+
+|                 proxiableUUID()                 | 0x52d1902d |
+|                upgradeTo(address)               | 0x3659cfe6 |
+|         upgradeToAndCall(address,bytes)         | 0x4f1ef286 |
+|                 proxiableUUID()                 | 0x52d1902d |
+|           setSecurityManager(address)           | 0x94dbea66 |
+|                     paused()                    | 0x5c975abb |
+|                      name()                     | 0x06fdde03 |
+|                     symbol()                    | 0x95d89b41 |
+|                    decimals()                   | 0x313ce567 |
+|                  totalSupply()                  | 0x18160ddd |
+|                balanceOf(address)               | 0x70a08231 |
+|            transfer(address,uint256)            | 0xa9059cbb |
+|            allowance(address,address)           | 0xdd62ed3e |
+|             approve(address,uint256)            | 0x095ea7b3 |
+|      transferFrom(address,address,uint256)      | 0x23b872dd |
+|        increaseAllowance(address,uint256)       | 0x39509351 |
+|        decreaseAllowance(address,uint256)       | 0xa457c2d7 |
+|                      name()                     | 0x06fdde03 |
+|                     symbol()                    | 0x95d89b41 |
+|                    decimals()                   | 0x313ce567 |
+|                  totalSupply()                  | 0x18160ddd |
+|                balanceOf(address)               | 0x70a08231 |
+|            transfer(address,uint256)            | 0xa9059cbb |
+|            allowance(address,address)           | 0xdd62ed3e |
+|             approve(address,uint256)            | 0x095ea7b3 |
+|      transferFrom(address,address,uint256)      | 0x23b872dd |
+|            supportsInterface(bytes4)            | 0x01ffc9a7 |
+|                    version()                    | 0x54fd4d50 |
+| initialize(string,string,uint8,uint256,address) | 0xf3571819 |
+|                    decimals()                   | 0x313ce567 |
+|                    getOwner()                   | 0x893d20e8 |
+|            assignBep20Owner(address)            | 0xd8cde46a |
+|              mint(address,uint256)              | 0x40c10f19 |
+|                  burn(uint256)                  | 0x42966c68 |
+|                     pause()                     | 0x8456cb59 |
+|                    unpause()                    | 0x3f4ba83a |
+|             approve(address,uint256)            | 0x095ea7b3 |
+|            transfer(address,uint256)            | 0xa9059cbb |
+|      transferFrom(address,address,uint256)      | 0x23b872dd |
+|  transferFromInternal(address,address,uint256)  | 0xbbdaebe2 |
+|            supportsInterface(bytes4)            | 0x01ffc9a7 |
+|             setVaultAddress(address)            | 0x85535cc5 |
+|                securityManager()                | 0xde675a6d |
+|                   ADMIN_ROLE()                  | 0x75b238fc |
+|                  MINTER_ROLE()                  | 0xd5391393 |
+|                  PAUSER_ROLE()                  | 0xe63ab1e9 |
+|                  BURNER_ROLE()                  | 0x282c51f3 |
+|                 UPGRADER_ROLE()                 | 0xf72c0d8b |
+|              GENERAL_MANAGER_ROLE()             | 0x5072705d |
+|             LIFECYCLE_MANAGER_ROLE()            | 0xeffa673f |
+|             WHITELIST_MANAGER_ROLE()            | 0x7295ed93 |
+|              DEPOSIT_MANAGER_ROLE()             | 0x7bc837bd |
+|                  vaultAddress()                 | 0x430bf08a |
+|                bep20TokenOwner()                | 0xba2be8ab |
++-------------------------------------------------+------------+
+
+
+Vault:
++---------------------------------------------+------------+
+|                     Name                    |     ID     |
++---------------------------------------------+------------+
+|                 vaultToken()                | 0x703bafd5 |
+|       withdrawDirect(uint256,address)       | 0x49747741 |
+|               proxiableUUID()               | 0x52d1902d |
+|              upgradeTo(address)             | 0x3659cfe6 |
+|       upgradeToAndCall(address,bytes)       | 0x4f1ef286 |
+|               proxiableUUID()               | 0x52d1902d |
+|         setSecurityManager(address)         | 0x94dbea66 |
+|                   paused()                  | 0x5c975abb |
+|                  version()                  | 0x54fd4d50 |
+| initialize(address,address,uint256,address) | 0xbe203094 |
+|               deposit(uint256)              | 0xb6b55f25 |
+|         depositFor(uint256,address)         | 0x36efd16f |
+|              withdraw(uint256)              | 0x2e1a7d4d |
+|       withdrawDirect(uint256,address)       | 0x49747741 |
+|                   pause()                   | 0x8456cb59 |
+|                  unpause()                  | 0x3f4ba83a |
+|      progressToNextPhase(ExchangeRate)      | 0x63856c73 |
+|            setWhitelist(address)            | 0x854cff2f |
+|          setMinimumDeposit(uint256)         | 0xe78ec42e |
+|            adminWithdraw(uint256)           | 0x7c5b4a37 |
+|              securityManager()              | 0xde675a6d |
+|                 ADMIN_ROLE()                | 0x75b238fc |
+|                MINTER_ROLE()                | 0xd5391393 |
+|                PAUSER_ROLE()                | 0xe63ab1e9 |
+|                BURNER_ROLE()                | 0x282c51f3 |
+|               UPGRADER_ROLE()               | 0xf72c0d8b |
+|            GENERAL_MANAGER_ROLE()           | 0x5072705d |
+|           LIFECYCLE_MANAGER_ROLE()          | 0xeffa673f |
+|           WHITELIST_MANAGER_ROLE()          | 0x7295ed93 |
+|            DEPOSIT_MANAGER_ROLE()           | 0x7bc837bd |
+|                 baseToken()                 | 0xc55dae63 |
+|                 vaultToken()                | 0x703bafd5 |
+|                 whitelist()                 | 0x93e59dc1 |
+|                currentPhase()               | 0x055ad42e |
+|            currentExchangeRate()            | 0xa3684977 |
+|               minimumDeposit()              | 0x636bfbab |
++---------------------------------------------+------------+
+
+
+Whitelist:
++----------------------------------------+------------+
+|                  Name                  |     ID     |
++----------------------------------------+------------+
+|      setSecurityManager(address)       | 0x94dbea66 |
+|         isWhitelisted(address)         | 0x3af32abf |
+|          constructor(address)          | 0xf8a6c595 |
+|         isWhitelisted(address)         | 0x3af32abf |
+|    addRemoveWhitelist(address,bool)    | 0x01ce5835 |
+| addRemoveWhitelistBulk(address[],bool) | 0xd604602d |
+|        setWhitelistOnOff(bool)         | 0xe4495781 |
+|           securityManager()            | 0xde675a6d |
+|              ADMIN_ROLE()              | 0x75b238fc |
+|             MINTER_ROLE()              | 0xd5391393 |
+|             PAUSER_ROLE()              | 0xe63ab1e9 |
+|             BURNER_ROLE()              | 0x282c51f3 |
+|            UPGRADER_ROLE()             | 0xf72c0d8b |
+|         GENERAL_MANAGER_ROLE()         | 0x5072705d |
+|        LIFECYCLE_MANAGER_ROLE()        | 0xeffa673f |
+|        WHITELIST_MANAGER_ROLE()        | 0x7295ed93 |
+|         DEPOSIT_MANAGER_ROLE()         | 0x7bc837bd |
+|             whitelistOn()              | 0x4917aa3f |
++----------------------------------------+------------+
