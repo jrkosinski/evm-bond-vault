@@ -1,8 +1,8 @@
 # EVM On-Chain Bond Vault 
 
-* [unit tests](tree/main/test)
-* [contracts](tree/main/contracts)
-* [docs](tree/main/docs)
+* [unit tests](https://github.com/jrkosinski/evm-bond-vault/tree/main/test)
+* [contracts](https://github.com/jrkosinski/evm-bond-vault/tree/main/contracts)
+* [docs](https://github.com/jrkosinski/evm-bond-vault/tree/main/docs)
 
 # Setup
 * clone this repository 
